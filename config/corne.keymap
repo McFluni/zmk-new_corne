@@ -63,11 +63,11 @@
             //                                                      enter
 
             bindings = <
-&kp ESC    &kp Q           &kp W           &kp F        &kp P             &kp B        &kp UP           &kp J     &kp L              &kp U        &kp Y            &kp SQT          &kp BSPC
-&kp TAB    &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G        &kp DOWN_ARROW   &kp M     &mt RIGHT_SHIFT N  &mt LCTRL E  &mt RIGHT_ALT I  &mt RIGHT_GUI O  &kp FSLH
-&kp LCTRL  &kp Z           &kp X           &kp C        &kp D             &kp V        &kp LEFT_ARROW   &kp K     &kp H              &kp COMMA    &kp DOT          &kp SEMI         &kp RET
-                           &kp LG(LA(K))   &kp LGUI     &kp LG(SPACE)     &kp SPACE    &kp RIGHT_ARROW  &kp BSPC  &mo 2              &kp DEL
-                                                                                       &kp ENTER
+&kp ESC    &kp Q           &kp W           &kp F        &kp P             &kp B          &kp UP           &kp J     &kp L              &kp U        &kp Y            &kp SQT          &kp BSPC
+&kp TAB    &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G          &kp DOWN_ARROW   &kp M     &mt RIGHT_SHIFT N  &mt LCTRL E  &mt RIGHT_ALT I  &mt RIGHT_GUI O  &kp FSLH
+&kp LCTRL  &kp Z           &kp X           &kp C        &kp D             &kp V          &kp LEFT_ARROW   &kp K     &kp H              &kp COMMA    &kp DOT          &kp SEMI         &kp RET
+                           &kp LG(LA(K))   &kp LGUI     &lt 1 LG(SPACE)   &lt 3 SPACE    &kp RIGHT_ARROW  &kp BSPC  &mo 2              &kp DEL
+                                                                                         &kp ENTER
             >;
 
             label = "COLEDH";
@@ -84,9 +84,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans    &kp FSLH          &kp STAR   &kp N5     &kp LEFT_PARENTHESIS    &mmv MOVE_UP     &kp RIGHT_PARENTHESIS  &kp N6     &kp PLUS   &kp MINUS  &trans    &trans
-&trans  &kp N1    &kp N2            &kp N3     &kp N4     &kp EQUAL               &kp E            &kp EQUAL              &kp N7     &kp N8     &kp N9     &kp N0    &trans
-&trans  &kp LGUI  &kp LALT          &kp LCTRL  &kp LSHFT  &kp COLON               &mmv MOVE_LEFT   &trans                 &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI  &trans
+&trans  &tog 1    &kp FSLH          &kp STAR   &kp N5     &kp LEFT_PARENTHESIS    &mmv MOVE_UP     &kp RIGHT_PARENTHESIS  &kp N6     &kp PLUS   &kp MINUS  &kp COLON  &trans
+&trans  &kp N1    &kp N2            &kp N3     &kp N4     &kp EQUAL               &kp E            &kp EQUAL              &kp N7     &kp N8     &kp N9     &kp N0     &trans
+&trans  &kp LGUI  &kp LALT          &kp LCTRL  &kp LSHFT  &kp LEFT_BRACKET        &mmv MOVE_LEFT   &kp RIGHT_BRACKET      &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI   &trans
                   &kp LC(NUMBER_0)  &trans     &trans     &kp SPACE               &mmv MOVE_RIGHT  &kp BSPC               &trans     &kp DEL
                                                                                   &mkp LCLK
             >;
@@ -117,16 +117,16 @@
         };
 
         layer_3 {
-            display-name = "Fn";
+            display-name = "NAV";
             bindings = <
-&trans  &kp F1      &kp F2      &kp F3       &kp F4     &kp F5      &mmv MOVE_UP     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans  &trans      &mkp LCLK   &mkp MCLK    &mkp RCLK  &mkp MB4    &mmv MOVE_DOWN   &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans  &sys_reset  &trans      &bootloader  &trans     &mkp MB5    &mmv MOVE_LEFT   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                    &kp C_MUTE  &trans       &trans     &trans      &mmv MOVE_RIGHT  &trans       &trans     &trans
-                                                                    &mkp LCLK
+&tog 3  &kp F1    &kp F2           &kp F3             &kp F4     &kp F5      &mmv MOVE_UP     &kp LC(Y)         &kp LC(C)  &kp UP     &kp LC(V)  &kp LC(Z)  &kp T
+&trans  &kp LGUI  &kp LALT         &kp LCTRL          &kp LSHFT  &mkp MB4    &mmv MOVE_DOWN   &kp K_CALCULATOR  &kp LEFT   &kp DOWN   &kp RIGHT  &kp LC(X)  &kp F12
+&trans  &trans    &kp K_SCROLL_UP  &kp K_SCROLL_DOWN  &trans     &mkp MB5    &mmv MOVE_LEFT   &kp INSERT        &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp PAUSE_BREAK
+                  &kp C_MUTE       &trans             &trans     &trans      &mmv MOVE_RIGHT  &mkp LCLK         &mkp RCLK  &mkp MCLK
+                                                                             &mkp LCLK
             >;
 
-            label = "FUN";
+            label = "NAV";
             sensor-bindings = <&scroll_encoder>;
         };
 
@@ -139,6 +139,20 @@
 &trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF    &mmv MOVE_LEFT   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
                          &kp C_MUTE      &trans        &trans        &trans             &mmv MOVE_RIGHT  &kp INS          &kp DEL          &trans
                                                                                         &mkp LCLK
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        layer_5 {
+            label = "FUN";
+            display-name = "Fn";
+            bindings = <
+&trans  &kp F1      &kp F2      &kp F3       &kp F4     &kp F5      &mmv MOVE_UP     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
+&trans  &trans      &mkp LCLK   &mkp MCLK    &mkp RCLK  &mkp MB4    &mmv MOVE_DOWN   &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
+&trans  &sys_reset  &trans      &bootloader  &trans     &mkp MB5    &mmv MOVE_LEFT   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
+                    &kp C_MUTE  &trans       &trans     &trans      &mmv MOVE_RIGHT  &trans       &trans     &trans
+                                                                    &mkp LCLK
             >;
 
             sensor-bindings = <&scroll_encoder>;
