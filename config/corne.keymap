@@ -32,6 +32,14 @@
             time-to-max-speed-ms = <400>;      // 500
             delay-ms = <0>;                   // 10
         };
+        
+        mt_tap_key_release_behavior {
+            compatible = "zmk,behavior-mod-tap";
+            label = "Timeless Mod-Tap Release";
+            bindings = <&kp>, <&kp>;
+            release-after-tap = <MT_TAP_KEY_RELEASE_HOLD>;
+            interrupt-on-hold = <MT_TAP_INTERRUPTED_HOLD>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -73,7 +81,7 @@
 
             bindings = <
 &kp ESC    &kp Q           &kp W           &kp F        &kp P             &kp B          &kp UP           &kp J            &kp L              &kp U        &kp Y            &kp SQT          &kp BSPC
-&kp TAB    &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G          &kp DOWN_ARROW   &kp M            &mt RIGHT_SHIFT N  &mt LCTRL E  &mt RIGHT_ALT I  &mt RIGHT_GUI O  &kp FSLH
+&kp TAB    &mt_tap_key_release_behavior LEFT_GUI A  &mt_tap_key_release_behavior LEFT_ALT R  &mt_tap_key_release_behavior LCTRL S  &mt_tap_key_release_behavior LEFT_SHIFT T  &kp G          &kp DOWN_ARROW   &kp M            &&mt_tap_key_release_behavior RIGHT_SHIFT N  &&mt_tap_key_release_behavior LCTRL E  &&mt_tap_key_release_behavior RIGHT_ALT I  &&mt_tap_key_release_behavior RIGHT_GUI O  &kp FSLH
 &kp LCTRL  &kp Z           &kp X           &kp C        &kp D             &kp V          &kp LEFT_ARROW   &kp K            &kp H              &kp COMMA    &kp DOT          &kp SEMI         &kp RET
                            &kp LG(LA(K))   &td0         &lt 1 LG(SPACE)   &lt 3 SPACE    &kp RIGHT_ARROW  &lt 5 BACKSPACE  &mo 2              &kp DEL
                                                                                          &kp ENTER
