@@ -33,11 +33,66 @@
             delay-ms = <0>;                   // 10
         };
 
-        mt_tap_key_release_behavior: mt_tap_key_release_behavior {
+        mt_left_gui_a: mt_left_gui_a {
             compatible = "zmk,behavior-mod-tap";
-            label = "Timeless Mod-Tap Release";
-            bindings = <&kp>, <&kp>;
-
+            label = "MT_LeftGui_A";
+            bindings = <&kp LEFT_GUI>, <&kp A>;
+            release-after-tap = <MT_TAP_KEY_RELEASE_HOLD>;
+            interrupt-on-hold = <MT_TAP_INTERRUPTED_HOLD>;
+        };
+        
+        mt_left_alt_r: mt_left_alt_r {
+            compatible = "zmk,behavior-mod-tap";
+            label = "MT_LeftAlt_R";
+            bindings = <&kp LEFT_ALT>, <&kp R>;
+            release-after-tap = <MT_TAP_KEY_RELEASE_HOLD>;
+            interrupt-on-hold = <MT_TAP_INTERRUPTED_HOLD>;
+        };
+        
+        mt_left_ctrl_s: mt_left_ctrl_s {
+            compatible = "zmk,behavior-mod-tap";
+            label = "MT_LeftCtrl_S";
+            bindings = <&kp LEFT_CTRL>, <&kp S>;
+            release-after-tap = <MT_TAP_KEY_RELEASE_HOLD>;
+            interrupt-on-hold = <MT_TAP_INTERRUPTED_HOLD>;
+        };
+        
+        mt_left_shift_t: mt_left_shift_t {
+            compatible = "zmk,behavior-mod-tap";
+            label = "MT_LeftShift_T";
+            bindings = <&kp LEFT_SHIFT>, <&kp T>;
+            release-after-tap = <MT_TAP_KEY_RELEASE_HOLD>;
+            interrupt-on-hold = <MT_TAP_INTERRUPTED_HOLD>;
+        };
+        
+        mt_right_shift_n: mt_right_shift_n {
+            compatible = "zmk,behavior-mod-tap";
+            label = "MT_RightShift_N";
+            bindings = <&kp RIGHT_SHIFT>, <&kp N>;
+            release-after-tap = <MT_TAP_KEY_RELEASE_HOLD>;
+            interrupt-on-hold = <MT_TAP_INTERRUPTED_HOLD>;
+        };
+        
+        mt_right_ctrl_e: mt_right_ctrl_e {
+            compatible = "zmk,behavior-mod-tap";
+            label = "MT_RightCtrl_E";
+            bindings = <&kp RIGHT_CTRL>, <&kp E>;
+            release-after-tap = <MT_TAP_KEY_RELEASE_HOLD>;
+            interrupt-on-hold = <MT_TAP_INTERRUPTED_HOLD>;
+        };
+        
+        mt_right_alt_i: mt_right_alt_i {
+            compatible = "zmk,behavior-mod-tap";
+            label = "MT_RightAlt_I";
+            bindings = <&kp RIGHT_ALT>, <&kp I>;
+            release-after-tap = <MT_TAP_KEY_RELEASE_HOLD>;
+            interrupt-on-hold = <MT_TAP_INTERRUPTED_HOLD>;
+        };
+        
+        mt_right_gui_o: mt_right_gui_o {
+            compatible = "zmk,behavior-mod-tap";
+            label = "MT_RightGui_O";
+            bindings = <&kp RIGHT_GUI>, <&kp O>;
             release-after-tap = <MT_TAP_KEY_RELEASE_HOLD>;
             interrupt-on-hold = <MT_TAP_INTERRUPTED_HOLD>;
         };
@@ -81,11 +136,10 @@
             //                                                      enter
 
             bindings = <
-&kp ESC  &kp Q                                    &kp W                                    &kp F                                 &kp P                                      &kp B        &kp UP          &kp J     &kp L     &kp U          &kp Y  &kp SQT          &kp BSPC
-&kp TAB  &mt_tap_key_release_behavior LEFT_GUI A  &mt_tap_key_release_behavior LEFT_ALT R  &mt_tap_key_release_behavior LCTRL S  &mt_tap_key_release_behavior LEFT_SHIFT T  &kp G        &kp DOWN_ARROW  &kp M     &kp FSLH  &kp LCTRL      &kp Z  &kp X            &kp C
-&kp D    &kp V                                    &kp LEFT_ARROW                           &kp K                                 &kp H                                      &kp COMMA    &kp DOT         &kp SEMI  &kp RET   &kp LG(LA(K))  &td0   &lt 1 LG(SPACE)  &lt 3 SPACE
-                                                  &kp RIGHT_ARROW                          &lt 5 BACKSPACE                       &mo 2                                      &kp DEL      &kp ENTER
-            >;
+    &kp ESC          &kp Q             &kp W            &kp F           &kp P          &kp B       &kp UP           &kp J            &kp L             &kp U          &kp Y          &kp SQT          &kp BSPC
+    &kp TAB          &mt_left_gui_a    &mt_left_alt_r   &mt_left_ctrl_s &mt_left_shift_t &kp G       &kp DOWN_ARROW   &kp M            &mt_right_shift_n &mt_right_ctrl_e &mt_right_alt_i &mt_right_gui_o &kp FSLH
+    &kp LCTRL        &kp Z             &kp X            &kp C           &kp D          &kp V       &kp LEFT_ARROW   &kp K            &kp H             &kp COMMA       &kp DOT        &kp SEMI         &kp RET
+>;
 
             label = "COLEDH";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
