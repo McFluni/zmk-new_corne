@@ -32,70 +32,6 @@
             time-to-max-speed-ms = <400>;      // 500
             delay-ms = <0>;                   // 10
         };
-
-        mt_left_gui_a: mt_left_gui_a {
-            compatible = "zmk,behavior-mod-tap";
-            label = "MT_LeftGui_A";
-            bindings = <&kp LEFT_GUI>, <&kp A>;
-            release-after-tap = <MT_TAP_KEY_RELEASE_HOLD>;
-            interrupt-on-hold = <MT_TAP_INTERRUPTED_HOLD>;
-        };
-        
-        mt_left_alt_r: mt_left_alt_r {
-            compatible = "zmk,behavior-mod-tap";
-            label = "MT_LeftAlt_R";
-            bindings = <&kp LEFT_ALT>, <&kp R>;
-            release-after-tap = <MT_TAP_KEY_RELEASE_HOLD>;
-            interrupt-on-hold = <MT_TAP_INTERRUPTED_HOLD>;
-        };
-        
-        mt_left_ctrl_s: mt_left_ctrl_s {
-            compatible = "zmk,behavior-mod-tap";
-            label = "MT_LeftCtrl_S";
-            bindings = <&kp LEFT_CTRL>, <&kp S>;
-            release-after-tap = <MT_TAP_KEY_RELEASE_HOLD>;
-            interrupt-on-hold = <MT_TAP_INTERRUPTED_HOLD>;
-        };
-        
-        mt_left_shift_t: mt_left_shift_t {
-            compatible = "zmk,behavior-mod-tap";
-            label = "MT_LeftShift_T";
-            bindings = <&kp LEFT_SHIFT>, <&kp T>;
-            release-after-tap = <MT_TAP_KEY_RELEASE_HOLD>;
-            interrupt-on-hold = <MT_TAP_INTERRUPTED_HOLD>;
-        };
-        
-        mt_right_shift_n: mt_right_shift_n {
-            compatible = "zmk,behavior-mod-tap";
-            label = "MT_RightShift_N";
-            bindings = <&kp RIGHT_SHIFT>, <&kp N>;
-            release-after-tap = <MT_TAP_KEY_RELEASE_HOLD>;
-            interrupt-on-hold = <MT_TAP_INTERRUPTED_HOLD>;
-        };
-        
-        mt_right_ctrl_e: mt_right_ctrl_e {
-            compatible = "zmk,behavior-mod-tap";
-            label = "MT_RightCtrl_E";
-            bindings = <&kp RIGHT_CTRL>, <&kp E>;
-            release-after-tap = <MT_TAP_KEY_RELEASE_HOLD>;
-            interrupt-on-hold = <MT_TAP_INTERRUPTED_HOLD>;
-        };
-        
-        mt_right_alt_i: mt_right_alt_i {
-            compatible = "zmk,behavior-mod-tap";
-            label = "MT_RightAlt_I";
-            bindings = <&kp RIGHT_ALT>, <&kp I>;
-            release-after-tap = <MT_TAP_KEY_RELEASE_HOLD>;
-            interrupt-on-hold = <MT_TAP_INTERRUPTED_HOLD>;
-        };
-        
-        mt_right_gui_o: mt_right_gui_o {
-            compatible = "zmk,behavior-mod-tap";
-            label = "MT_RightGui_O";
-            bindings = <&kp RIGHT_GUI>, <&kp O>;
-            release-after-tap = <MT_TAP_KEY_RELEASE_HOLD>;
-            interrupt-on-hold = <MT_TAP_INTERRUPTED_HOLD>;
-        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -176,11 +112,11 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&to 0   &trans           &trans       &trans     &trans      &kp COLON      &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK  &kp TILDE
-&to 2   &kp EXCLAMATION  &kp AT_SIGN  &kp HASH   &kp DOLLAR  &kp PERCENT    &mmv MOVE_DOWN   &kp MINUS  &kp EQUAL  &kp LBKT              &kp RBKT               &kp BSLH      &kp GRAVE
-&trans  &kp LGUI         &kp LALT     &kp LCTRL  &kp LSHFT   &trans         &mmv MOVE_LEFT   &kp UNDER  &kp PLUS   &kp LBRC              &kp RBRC               &kp PIPE      &kp RET
-                         &trans       &trans     &trans      &kp SPACE      &mmv MOVE_RIGHT  &kp BSPC   &trans     &kp DEL
-                                                                            &mkp LCLK
+&kp ESC    &kp Q           &kp W           &kp F        &kp P             &kp B          &kp UP           &kp J            &kp L              &kp U        &kp Y            &kp SQT          &kp BSPC
+&kp TAB    &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G          &kp DOWN_ARROW   &kp M            &mt RIGHT_SHIFT N  &mt LCTRL E  &mt RIGHT_ALT I  &mt RIGHT_GUI O  &kp FSLH
+&kp LCTRL  &kp Z           &kp X           &kp C        &kp D             &kp V          &kp LEFT_ARROW   &kp K            &kp H              &kp COMMA    &kp DOT          &kp SEMI         &kp RET
+                           &kp LG(LA(K))   &td0         &lt 1 LG(SPACE)   &lt 3 SPACE    &kp RIGHT_ARROW  &lt 5 BACKSPACE  &mo 2              &kp DEL
+                                                                                         &kp ENTER
             >;
 
             label = "SYMBOL";
