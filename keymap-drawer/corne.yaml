@@ -41,7 +41,7 @@ layers:
   - {t: ;, s: ':'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - Gui+Alt+ K
-  - LGUI
+  - '&td0'
   - {t: 'Gui+ $$mdi:keyboard-space$$', h: NUMBER}
   - {t: '$$mdi:keyboard-space$$', h: NAV}
   - $$mdi:arrow-right-bold$$
@@ -50,7 +50,7 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   NUMBER:
-  - {t: NUMBER, h: toggle}
+  - {t: COLEDH, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: /, s: '?'}
   - '*'
@@ -63,7 +63,7 @@ layers:
   - {t: '-', s: _}
   - ':'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: NUMBER, h: toggle}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -99,7 +99,7 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:mouse-left-click-outline$$
   SYMBOL:
-  - {t: SYMBOL, h: toggle}
+  - {t: COLEDH, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -112,7 +112,7 @@ layers:
   - )
   - '*'
   - '~'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: SYMBOL, h: toggle}
   - '!'
   - '@'
   - '#'
@@ -148,7 +148,7 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:mouse-left-click-outline$$
   NAV:
-  - {t: NAV, h: toggle}
+  - {t: COLEDH, h: toggle}
   - F1
   - F2
   - F3
@@ -161,7 +161,7 @@ layers:
   - Ctl+ V
   - Ctl+ Z
   - T
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: NAV, h: toggle}
   - LGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
@@ -197,7 +197,7 @@ layers:
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-left-click-outline$$
   BLTRGB:
-  - {t: BLTRGB, h: toggle}
+  - {t: COLEDH, h: toggle}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -246,7 +246,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   FUN:
-  - {t: FUN, h: toggle}
+  - {t: COLEDH, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -259,7 +259,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: FUN, h: toggle}
   - F1
   - F2
   - F3
