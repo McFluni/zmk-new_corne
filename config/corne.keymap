@@ -70,6 +70,11 @@
             bindings = <&tog 4>;
             key-positions = <5 7>;
         };
+
+        ToggleMNCR {
+            bindings = <&to 6>;
+            key-positions = <2 3 4>;
+        };
     };
 
     keymap {
@@ -179,6 +184,18 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        layer_6 {
+            bindings = <
+&trans     &trans  &kp E   &kp W   &kp F      &kp N1       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &kp L   &kp A   &kp S   &kp D      &kp N2       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL  &kp F1  &kp F2  &kp F3  &kp F4     &kp N3       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                   &to 0   &trans  &kp LSHFT  &kp SPACE    &trans  &trans  &trans  &trans
+                                                           &trans
+            >;
+
+            label = "MINECR";
         };
     };
 };
