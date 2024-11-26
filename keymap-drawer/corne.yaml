@@ -15,17 +15,17 @@ layers:
   - {t: '''', s: '"'}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
-  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: R, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
+  - '&mt_tap_key_release_behavior LEFT_GUI A'
+  - '&mt_tap_key_release_behavior LEFT_ALT R'
+  - '&mt_tap_key_release_behavior LCTRL S'
+  - '&mt_tap_key_release_behavior LEFT_SHIFT T'
   - G
   - $$mdi:arrow-down-bold$$
   - M
-  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: E, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: O, h: RIGHT GUI}
+  - '&mt_tap_key_release_behavior RIGHT_SHIFT N'
+  - '&mt_tap_key_release_behavior LCTRL E'
+  - '&mt_tap_key_release_behavior RIGHT_ALT I'
+  - '&mt_tap_key_release_behavior RIGHT_GUI O'
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-control$$
   - Z
