@@ -148,7 +148,7 @@
             display-name = "NAV";
             bindings = <
 &to 0   &kp F1    &kp F2           &kp F3             &kp F4     &kp F5      &mmv MOVE_UP     &kp LC(Y)   &kp LC(C)  &kp UP     &kp LC(V)  &kp LC(Z)  &kp LG(LS(D))
-&to 3   &kp LGUI  &kp LALT         &kp LCTRL          &kp LSHFT  &mkp MB4    &mmv MOVE_DOWN   &kp C_CALC  &kp LEFT   &kp DOWN   &kp RIGHT  &kp LC(X)  &kp F12
+&to 3   &kp LGUI  &kp LALT         &kp LCTRL          &kp LSHFT  &mkp MB4    &mmv MOVE_DOWN   &kp K_CALC  &kp LEFT   &kp DOWN   &kp RIGHT  &kp LC(X)  &kp F12
 &trans  &trans    &kp K_SCROLL_UP  &kp K_SCROLL_DOWN  &trans     &mkp MB5    &mmv MOVE_LEFT   &kp INSERT  &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp PAUSE_BREAK
                   &kp C_MUTE       &trans             &trans     &trans      &mmv MOVE_RIGHT  &mkp LCLK   &mkp RCLK  &mkp MCLK
                                                                              &mkp LCLK
