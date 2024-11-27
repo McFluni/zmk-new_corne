@@ -168,7 +168,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - '&mkp MB4'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - CALC
+  - AL CALC
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
