@@ -98,11 +98,11 @@ svg.keymap {
 
 /* default key styling */
 rect.key {
-    fill: #1e1e1e;
+    fill: #232f38;
 }
 
 rect.key, rect.combo {
-    stroke: #ff6f61;
+    stroke: #181e25;
     stroke-width: 1;
 }
 
@@ -113,12 +113,12 @@ rect.side {
 
 /* color accent for combo boxes */
 rect.combo, rect.combo-separate {
-    fill: #56c5e1;
+    fill: #5A6C57;
 }
 
 /* color accent for held keys */
 rect.held, rect.combo.held {
-    fill: #ffdd57;
+    fill: #232f38;
 }
 
 /* color accent for ghost (optional) keys */
@@ -191,7 +191,7 @@ text.trans {
 path.combo {
     stroke-width: 1;
     stroke: gray;
-    fill: #ff6f61;
+    fill: #379c66;
 }
 
 /* Start Tabler Icons Cleanup */
@@ -218,7 +218,7 @@ svg.keymap {
 
 /* Color accent for held keys */
 rect.held, rect.combo.held {
-    fill: #ffc;
+    fill: #136b79;
 }
 
 /* Technique borrowed and extended from https://github.com/englmaxi/zmk-config/blob/master/keymap-drawer/config.yaml */
