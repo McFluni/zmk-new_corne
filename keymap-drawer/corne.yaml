@@ -346,11 +346,15 @@ layers:
 combos:
 - p: [5, 7]
   k: {t: BLTRGB, h: toggle}
+  l: [COLEDH]
 - p: [2, 3, 4]
   k: {t: MINECR, h: toggle}
+  l: [COLEDH]
 - p: [41, 4]
   k: {t: NUMBER, h: toggle}
+  l: [COLEDH]
 - p: [45, 8]
   k: {t: SYMBOL, h: toggle}
+  l: [COLEDH]
 - p: [42, 30]
   k: {t: NAV, h: toggle}
