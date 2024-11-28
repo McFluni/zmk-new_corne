@@ -93,7 +93,7 @@ svg.keymap {
     font-size: 14px;
     font-kerning: normal;
     text-rendering: optimizeLegibility;
-    fill: #f9f9f9;
+    fill: #4db079;
 }
 
 /* default key styling */
@@ -113,7 +113,7 @@ rect.side {
 
 /* color accent for combo boxes */
 rect.combo, rect.combo-separate {
-    fill: #5A6C57;
+    fill: #147180;
 }
 
 /* color accent for held keys */
