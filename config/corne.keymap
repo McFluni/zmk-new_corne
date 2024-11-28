@@ -69,21 +69,25 @@
         ToggleBLT {
             bindings = <&tog 4>;
             key-positions = <5 7>;
+            layers = <0>;
         };
 
         ToggleMNCR {
             bindings = <&to 6>;
             key-positions = <2 3 4>;
+            layers = <0>;
         };
 
         ToNum {
             bindings = <&to 1>;
             key-positions = <41 4>;
+            layers = <0>;
         };
 
         ToSymbol {
             bindings = <&to 2>;
             key-positions = <45 8>;
+            layers = <0>;
         };
 
         ToNav {
