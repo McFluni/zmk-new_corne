@@ -547,7 +547,9 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:backspace-reverse-outline"/>
-</g>
+<a href="#BLTRGB">
+<text x="0" y="24" class="key hold layer-activator">BLTRGB</text>
+</a></g>
 <g transform="translate(462, 84)" class="key enter keypos-47">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key enter side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key enter"/>
@@ -568,6 +570,30 @@ rect.held, rect.combo.held {
 <a href="#MINECR">
 <text x="196" y="54" class="combo tap layer-activator">MINECR</text>
 </a><text x="196" y="65" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-2">
+<path d="M283,166 l26,92" class="combo"/>
+<path d="M283,166 l-26,-92" class="combo"/>
+<rect rx="6" ry="6" x="269" y="153" width="28" height="26" class="combo"/>
+<a href="#NUMBER">
+<text x="283" y="166" class="combo tap layer-activator">NUMBER</text>
+</a><text x="283" y="177" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-3">
+<path d="M641,166 l-26,92" class="combo"/>
+<path d="M641,166 l26,-92" class="combo"/>
+<rect rx="6" ry="6" x="627" y="153" width="28" height="26" class="combo"/>
+<a href="#SYMBOL">
+<text x="641" y="166" class="combo tap layer-activator">SYMBOL</text>
+</a><text x="641" y="177" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-4">
+<path d="M317,234 l52,52" class="combo"/>
+<path d="M317,234 l-52,-52" class="combo"/>
+<rect rx="6" ry="6" x="303" y="221" width="28" height="26" class="combo"/>
+<a href="#NAV">
+<text x="317" y="234" class="combo tap layer-activator">NAV</text>
+</a><text x="317" y="245" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -648,12 +674,10 @@ rect.held, rect.combo.held {
 <tspan x="0" dy="-0.6em" style="font-size: 75%">Gui+Sft+</tspan><tspan x="0" dy="1.2em" style="font-size: 75%">D</tspan>
 </text>
 </g>
-<g transform="translate(28, 133)" class="key keypos-13">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#NUMBER">
-<text x="0" y="-4" class="key tap layer-activator">NUMBER</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<g transform="translate(28, 133)" class="key trans keypos-13">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g transform="translate(84, 133)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -857,6 +881,30 @@ rect.held, rect.combo.held {
 <text x="196" y="54" class="combo tap layer-activator">MINECR</text>
 </a><text x="196" y="65" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-2">
+<path d="M283,166 l26,92" class="combo"/>
+<path d="M283,166 l-26,-92" class="combo"/>
+<rect rx="6" ry="6" x="269" y="153" width="28" height="26" class="combo"/>
+<a href="#NUMBER">
+<text x="283" y="166" class="combo tap layer-activator">NUMBER</text>
+</a><text x="283" y="177" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-3">
+<path d="M641,166 l-26,92" class="combo"/>
+<path d="M641,166 l26,-92" class="combo"/>
+<rect rx="6" ry="6" x="627" y="153" width="28" height="26" class="combo"/>
+<a href="#SYMBOL">
+<text x="641" y="166" class="combo tap layer-activator">SYMBOL</text>
+</a><text x="641" y="177" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-4">
+<path d="M317,234 l52,52" class="combo"/>
+<path d="M317,234 l-52,-52" class="combo"/>
+<rect rx="6" ry="6" x="303" y="221" width="28" height="26" class="combo"/>
+<a href="#NAV">
+<text x="317" y="234" class="combo tap layer-activator">NAV</text>
+</a><text x="317" y="245" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 811)" class="layer-SYMBOL">
@@ -930,12 +978,10 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">~</text>
 </g>
-<g transform="translate(28, 133)" class="key keypos-13">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#SYMBOL">
-<text x="0" y="-4" class="key tap layer-activator">SYMBOL</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<g transform="translate(28, 133)" class="key trans keypos-13">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g transform="translate(84, 133)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1131,6 +1177,30 @@ rect.held, rect.combo.held {
 <text x="196" y="54" class="combo tap layer-activator">MINECR</text>
 </a><text x="196" y="65" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-2">
+<path d="M283,166 l26,92" class="combo"/>
+<path d="M283,166 l-26,-92" class="combo"/>
+<rect rx="6" ry="6" x="269" y="153" width="28" height="26" class="combo"/>
+<a href="#NUMBER">
+<text x="283" y="166" class="combo tap layer-activator">NUMBER</text>
+</a><text x="283" y="177" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-3">
+<path d="M641,166 l-26,92" class="combo"/>
+<path d="M641,166 l26,-92" class="combo"/>
+<rect rx="6" ry="6" x="627" y="153" width="28" height="26" class="combo"/>
+<a href="#SYMBOL">
+<text x="641" y="166" class="combo tap layer-activator">SYMBOL</text>
+</a><text x="641" y="177" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-4">
+<path d="M317,234 l52,52" class="combo"/>
+<path d="M317,234 l-52,-52" class="combo"/>
+<rect rx="6" ry="6" x="303" y="221" width="28" height="26" class="combo"/>
+<a href="#NAV">
+<text x="317" y="234" class="combo tap layer-activator">NAV</text>
+</a><text x="317" y="245" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1216)" class="layer-NAV">
@@ -1214,12 +1284,10 @@ rect.held, rect.combo.held {
 <tspan x="0" dy="-0.6em" style="font-size: 75%">Gui+Sft+</tspan><tspan x="0" dy="1.2em" style="font-size: 75%">D</tspan>
 </text>
 </g>
-<g transform="translate(28, 133)" class="key keypos-13">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#NAV">
-<text x="0" y="-4" class="key tap layer-activator">NAV</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<g transform="translate(28, 133)" class="key trans keypos-13">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g transform="translate(84, 133)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1427,6 +1495,30 @@ rect.held, rect.combo.held {
 <text x="196" y="54" class="combo tap layer-activator">MINECR</text>
 </a><text x="196" y="65" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-2">
+<path d="M283,166 l26,92" class="combo"/>
+<path d="M283,166 l-26,-92" class="combo"/>
+<rect rx="6" ry="6" x="269" y="153" width="28" height="26" class="combo"/>
+<a href="#NUMBER">
+<text x="283" y="166" class="combo tap layer-activator">NUMBER</text>
+</a><text x="283" y="177" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-3">
+<path d="M641,166 l-26,92" class="combo"/>
+<path d="M641,166 l26,-92" class="combo"/>
+<rect rx="6" ry="6" x="627" y="153" width="28" height="26" class="combo"/>
+<a href="#SYMBOL">
+<text x="641" y="166" class="combo tap layer-activator">SYMBOL</text>
+</a><text x="641" y="177" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-4">
+<path d="M317,234 l52,52" class="combo"/>
+<path d="M317,234 l-52,-52" class="combo"/>
+<rect rx="6" ry="6" x="303" y="221" width="28" height="26" class="combo"/>
+<a href="#NAV">
+<text x="317" y="234" class="combo tap layer-activator">NAV</text>
+</a><text x="317" y="245" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1622)" class="layer-BLTRGB">
@@ -1510,12 +1602,10 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:bluetooth-off" xlink:href="#mdi:bluetooth-off" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:bluetooth-off"/>
 </g>
-<g transform="translate(28, 133)" class="key keypos-13">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#BLTRGB">
-<text x="0" y="-4" class="key tap layer-activator">BLTRGB</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<g transform="translate(28, 133)" class="key trans keypos-13">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g transform="translate(84, 133)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1705,10 +1795,9 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(672, 252)" class="key trans keypos-46">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(672, 252)" class="key held keypos-46">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
 </g>
 <g transform="translate(462, 84)" class="key keypos-47">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1730,6 +1819,30 @@ rect.held, rect.combo.held {
 <a href="#MINECR">
 <text x="196" y="54" class="combo tap layer-activator">MINECR</text>
 </a><text x="196" y="65" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-2">
+<path d="M283,166 l26,92" class="combo"/>
+<path d="M283,166 l-26,-92" class="combo"/>
+<rect rx="6" ry="6" x="269" y="153" width="28" height="26" class="combo"/>
+<a href="#NUMBER">
+<text x="283" y="166" class="combo tap layer-activator">NUMBER</text>
+</a><text x="283" y="177" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-3">
+<path d="M641,166 l-26,92" class="combo"/>
+<path d="M641,166 l26,-92" class="combo"/>
+<rect rx="6" ry="6" x="627" y="153" width="28" height="26" class="combo"/>
+<a href="#SYMBOL">
+<text x="641" y="166" class="combo tap layer-activator">SYMBOL</text>
+</a><text x="641" y="177" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-4">
+<path d="M317,234 l52,52" class="combo"/>
+<path d="M317,234 l-52,-52" class="combo"/>
+<rect rx="6" ry="6" x="303" y="221" width="28" height="26" class="combo"/>
+<a href="#NAV">
+<text x="317" y="234" class="combo tap layer-activator">NAV</text>
+</a><text x="317" y="245" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -2003,6 +2116,30 @@ rect.held, rect.combo.held {
 <text x="196" y="54" class="combo tap layer-activator">MINECR</text>
 </a><text x="196" y="65" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-2">
+<path d="M283,166 l26,92" class="combo"/>
+<path d="M283,166 l-26,-92" class="combo"/>
+<rect rx="6" ry="6" x="269" y="153" width="28" height="26" class="combo"/>
+<a href="#NUMBER">
+<text x="283" y="166" class="combo tap layer-activator">NUMBER</text>
+</a><text x="283" y="177" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-3">
+<path d="M641,166 l-26,92" class="combo"/>
+<path d="M641,166 l26,-92" class="combo"/>
+<rect rx="6" ry="6" x="627" y="153" width="28" height="26" class="combo"/>
+<a href="#SYMBOL">
+<text x="641" y="166" class="combo tap layer-activator">SYMBOL</text>
+</a><text x="641" y="177" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-4">
+<path d="M317,234 l52,52" class="combo"/>
+<path d="M317,234 l-52,-52" class="combo"/>
+<rect rx="6" ry="6" x="303" y="221" width="28" height="26" class="combo"/>
+<a href="#NAV">
+<text x="317" y="234" class="combo tap layer-activator">NAV</text>
+</a><text x="317" y="245" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 2433)" class="layer-MINECR">
@@ -2233,11 +2370,12 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(542, 299) rotate(-30.0)" class="key trans keypos-44">
-<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key trans side"/>
-<rect rx="4" ry="4" x="-20" y="-38" width="40" height="68" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
-</g>
+<g transform="translate(542, 299) rotate(-30.0)" class="key keypos-44">
+<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key side"/>
+<rect rx="4" ry="4" x="-20" y="-38" width="40" height="68" class="key"/>
+<a href="#COLEDH">
+<text x="0" y="-4" class="key tap layer-activator">COLEDH</text>
+</a></g>
 <g transform="translate(610, 276) rotate(-30.0)" class="key trans keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
@@ -2268,6 +2406,30 @@ rect.held, rect.combo.held {
 <a href="#MINECR">
 <text x="196" y="54" class="combo tap layer-activator">MINECR</text>
 </a><text x="196" y="65" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-2">
+<path d="M283,166 l26,92" class="combo"/>
+<path d="M283,166 l-26,-92" class="combo"/>
+<rect rx="6" ry="6" x="269" y="153" width="28" height="26" class="combo"/>
+<a href="#NUMBER">
+<text x="283" y="166" class="combo tap layer-activator">NUMBER</text>
+</a><text x="283" y="177" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-3">
+<path d="M641,166 l-26,92" class="combo"/>
+<path d="M641,166 l26,-92" class="combo"/>
+<rect rx="6" ry="6" x="627" y="153" width="28" height="26" class="combo"/>
+<a href="#SYMBOL">
+<text x="641" y="166" class="combo tap layer-activator">SYMBOL</text>
+</a><text x="641" y="177" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-4">
+<path d="M317,234 l52,52" class="combo"/>
+<path d="M317,234 l-52,-52" class="combo"/>
+<rect rx="6" ry="6" x="303" y="221" width="28" height="26" class="combo"/>
+<a href="#NAV">
+<text x="317" y="234" class="combo tap layer-activator">NAV</text>
+</a><text x="317" y="245" class="combo hold">toggle</text>
 </g>
 </g>
 </g>

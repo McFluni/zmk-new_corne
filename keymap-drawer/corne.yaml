@@ -47,7 +47,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:backspace$$', h: FUN}
   - SYMBOL
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:backspace-reverse-outline$$', h: BLTRGB}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   NUMBER:
   - {t: COLEDH, h: toggle}
@@ -63,7 +63,7 @@ layers:
   - {t: '-', s: _}
   - ':'
   - Gui+Sft+ D
-  - {t: NUMBER, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -112,7 +112,7 @@ layers:
   - )
   - '*'
   - '~'
-  - {t: SYMBOL, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '!'
   - '@'
   - '#'
@@ -161,7 +161,7 @@ layers:
   - Ctl+ V
   - Ctl+ Z
   - Gui+Sft+ D
-  - {t: NAV, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - LGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
@@ -210,7 +210,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - $$mdi:bluetooth-off$$
-  - {t: BLTRGB, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
@@ -243,7 +243,7 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - $$mdi:mouse-left-click-outline$$
   FUN:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -339,7 +339,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - COLEDH
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -348,3 +348,9 @@ combos:
   k: {t: BLTRGB, h: toggle}
 - p: [2, 3, 4]
   k: {t: MINECR, h: toggle}
+- p: [41, 4]
+  k: {t: NUMBER, h: toggle}
+- p: [45, 8]
+  k: {t: SYMBOL, h: toggle}
+- p: [42, 30]
+  k: {t: NAV, h: toggle}
