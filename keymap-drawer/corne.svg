@@ -136,7 +136,7 @@ text {
 text.label {
     font-weight: bold;
     text-anchor: start;
-    stroke: white;
+    stroke: #232f38;
     stroke-width: 4;
     paint-order: stroke;
 }
