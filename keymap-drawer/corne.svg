@@ -93,16 +93,16 @@ svg.keymap {
     font-size: 14px;
     font-kerning: normal;
     text-rendering: optimizeLegibility;
-    fill: #24292e;
+    fill: #f9f9f9;
 }
 
 /* default key styling */
 rect.key {
-    fill: #f6f8fa;
+    fill: #1e1e1e;
 }
 
 rect.key, rect.combo {
-    stroke: #c9cccf;
+    stroke: #ff6f61;
     stroke-width: 1;
 }
 
@@ -113,12 +113,12 @@ rect.side {
 
 /* color accent for combo boxes */
 rect.combo, rect.combo-separate {
-    fill: #cdf;
+    fill: #56c5e1;
 }
 
 /* color accent for held keys */
 rect.held, rect.combo.held {
-    fill: #fdd;
+    fill: #ffdd57;
 }
 
 /* color accent for ghost (optional) keys */
@@ -184,14 +184,14 @@ text.combo.hold, text.combo.shifted, text.combo.left, text.combo.right {
 
 /* lighter symbol for transparent keys */
 text.trans {
-    fill: #7b7e81;
+    fill: #8a8a8a;
 }
 
 /* styling for combo dendrons */
 path.combo {
     stroke-width: 1;
     stroke: gray;
-    fill: none;
+    fill: #ff6f61;
 }
 
 /* Start Tabler Icons Cleanup */
