@@ -358,3 +358,4 @@ combos:
   l: [COLEDH]
 - p: [42, 4]
   k: {t: NAV, h: toggle}
+  l: [COLEDH]
