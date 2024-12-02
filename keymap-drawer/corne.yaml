@@ -356,5 +356,5 @@ combos:
 - p: [45, 8]
   k: {t: SYMBOL, h: toggle}
   l: [COLEDH]
-- p: [42, 30]
+- p: [42, 4]
   k: {t: NAV, h: toggle}
