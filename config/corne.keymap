@@ -93,6 +93,7 @@
         ToNav {
             bindings = <&to 3>;
             key-positions = <42 4>;
+            layers = <0>;
         };
     };
 
