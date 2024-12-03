@@ -11,6 +11,8 @@
 #define U_MS_D &mmv MOVE_DOWN
 #define U_MS_L &mmv MOVE_LEFT
 #define U_MS_R &mmv MOVE_RIGHT
+#define U_SCROLL_UP &mmv SCROLL_UP
+#define U_SCROLL_DOWN &mmv SCROLL_DOWN
 
 / {
     behaviors {
@@ -140,7 +142,7 @@
             >;
 
             label = "NUMBER";
-            sensor-bindings = <&inc_dec_kp LC(K_SCROLL_UP) LC(K_SCROLL_DOWN)>;
+            sensor-bindings = <&inc_dec_kp LC(SCROLL_UP) LC(SCROLL_DOWN)>;
         };
 
         raise_layer {
