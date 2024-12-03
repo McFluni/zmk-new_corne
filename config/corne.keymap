@@ -132,10 +132,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&to 0   &trans    &kp FSLH          &kp STAR   &kp N5     &kp LEFT_PARENTHESIS    &mmv MOVE_UP     &kp RIGHT_PARENTHESIS  &kp N6     &kp PLUS   &kp MINUS  &kp COLON  &kp LG(LS(D))
-&trans  &kp N1    &kp N2            &kp N3     &kp N4     &kp EQUAL               &mmv MOVE_DOWN   &kp EQUAL              &kp N7     &kp N8     &kp N9     &kp N0     &trans
-&trans  &kp LGUI  &kp LALT          &kp LCTRL  &kp LSHFT  &kp LEFT_BRACKET        &mmv MOVE_LEFT   &kp RIGHT_BRACKET      &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI   &trans
-                  &kp LC(NUMBER_0)  &trans     &trans     &kp SPACE               &mmv MOVE_RIGHT  &kp BSPC               &trans     &kp DEL
+&to 0   &trans    &kp FSLH          &kp STAR   &kp N5     &kp LEFT_PARENTHESIS    &mmv MOVE_UP     &kp RIGHT_PARENTHESIS  &kp N6      &kp PLUS   &kp MINUS  &kp COLON  &kp LG(LS(D))
+&trans  &kp N1    &kp N2            &kp N3     &kp N4     &kp EQUAL               &mmv MOVE_DOWN   &kp EQUAL              &kp N7      &kp N8     &kp N9     &kp N0     &trans
+&trans  &kp LGUI  &kp LALT          &kp LCTRL  &kp LSHFT  &kp LEFT_BRACKET        &mmv MOVE_LEFT   &kp RIGHT_BRACKET      &kp RSHFT   &kp RCTRL  &kp RALT   &kp RGUI   &trans
+                  &kp LC(NUMBER_0)  &trans     &trans     &kp SPACE               &mmv MOVE_RIGHT  &kp BSPC               &kp PERIOD  &kp DEL
                                                                                   &mkp LCLK
             >;
 
