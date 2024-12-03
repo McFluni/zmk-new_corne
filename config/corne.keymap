@@ -11,8 +11,6 @@
 #define U_MS_D &mmv MOVE_DOWN
 #define U_MS_L &mmv MOVE_LEFT
 #define U_MS_R &mmv MOVE_RIGHT
-#define U_SCROLL_UP &mmv SCROLL_UP
-#define U_SCROLL_DOWN &mmv SCROLL_DOWN
 
 / {
     behaviors {
