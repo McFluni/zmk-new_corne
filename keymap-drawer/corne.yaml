@@ -46,7 +46,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: NAV}
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:backspace$$', h: FUN}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: SYMBOL}
+  - SYMBOL
   - {t: '$$mdi:backspace-reverse-outline$$', h: BLTRGB}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   NUMBER:
