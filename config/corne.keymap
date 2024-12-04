@@ -121,7 +121,7 @@
             //                                                      enter
 
             bindings = <
-&kp ESC    &kp Q            &kp W            &kp F         &kp P              &kp B          &kp UP           &kp J            &kp L                 &kp U         &kp Y             &kp SQT           &kp RIGHT_ALT
+&kp ESC    &kp Q            &kp W            &kp F         &kp P              &kp B          &kp UP           &kp J            &kp L                 &kp U         &kp Y             &kp SQT           &kp GRAVE
 &kp TAB    &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &kp G          &kp DOWN_ARROW   &kp M            &hml RIGHT_SHIFT N    &hml LCTRL E  &hml RIGHT_ALT I  &hml RIGHT_GUI O  &kp FSLH
 &kp LCTRL  &kp Z            &kp X            &kp C         &kp D              &kp V          &kp LEFT_ARROW   &kp K            &kp H                 &kp COMMA     &kp DOT           &kp SEMI          &kp RET
                             &kp LG(LA(K))    &td0          &lt 1 LG(SPACE)    &lt 3 SPACE    &kp RIGHT_ARROW  &lt 5 BACKSPACE  &sk_mo 2 RIGHT_SHIFT  &lt 4 DELETE
@@ -142,11 +142,11 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&to 0   &trans    &kp FSLH          &kp STAR   &kp N5     &kp LEFT_PARENTHESIS    &mmv MOVE_UP     &kp RIGHT_PARENTHESIS  &kp N6      &kp PLUS   &kp MINUS  &kp COLON  &kp LG(LS(D))
-&trans  &kp N1    &kp N2            &kp N3     &kp N4     &kp EQUAL               &mmv MOVE_DOWN   &kp EQUAL              &kp N7      &kp N8     &kp N9     &kp N0     &trans
-&trans  &kp LGUI  &kp LALT          &kp LCTRL  &kp LSHFT  &kp LEFT_BRACKET        &mmv MOVE_LEFT   &kp RIGHT_BRACKET      &kp RSHFT   &kp RCTRL  &kp RALT   &kp RGUI   &trans
-                  &kp LC(NUMBER_0)  &trans     &trans     &kp SPACE               &mmv MOVE_RIGHT  &kp BSPC               &kp PERIOD  &kp DEL
-                                                                                  &mkp LCLK
+&to 0          &trans    &kp FSLH          &kp STAR   &kp N5     &kp LEFT_PARENTHESIS    &mmv MOVE_UP     &kp RIGHT_PARENTHESIS  &kp N6      &kp PLUS   &kp MINUS  &kp COLON  &kp LG(LS(D))
+&kp C_AL_CALC  &kp N1    &kp N2            &kp N3     &kp N4     &kp EQUAL               &mmv MOVE_DOWN   &kp EQUAL              &kp N7      &kp N8     &kp N9     &kp N0     &trans
+&trans         &kp LGUI  &kp LALT          &kp LCTRL  &kp LSHFT  &kp LEFT_BRACKET        &mmv MOVE_LEFT   &kp RIGHT_BRACKET      &kp RSHFT   &kp RCTRL  &kp RALT   &kp RGUI   &trans
+                         &kp LC(NUMBER_0)  &trans     &trans     &kp SPACE               &mmv MOVE_RIGHT  &kp BSPC               &kp PERIOD  &kp DEL
+                                                                                         &mkp LCLK
             >;
 
             label = "NUMBER";
@@ -177,11 +177,11 @@
         layer_3 {
             display-name = "NAV";
             bindings = <
-&to 0   &kp F1    &kp F2      &kp F3     &kp F4     &kp F5      &mmv MOVE_UP     &kp LC(Y)      &kp LC(C)  &kp UP     &kp LC(V)  &kp LC(Z)  &kp LG(LS(D))
-&trans  &kp LGUI  &kp LALT    &kp LCTRL  &kp LSHFT  &mkp MB4    &mmv MOVE_DOWN   &kp C_AL_CALC  &kp LEFT   &kp DOWN   &kp RIGHT  &kp LC(X)  &kp F12
-&trans  &trans    &trans      &trans     &trans     &mkp MB5    &mmv MOVE_LEFT   &kp INSERT     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp PAUSE_BREAK
-                  &kp C_MUTE  &trans     &trans     &trans      &mmv MOVE_RIGHT  &mkp LCLK      &mkp RCLK  &mkp MCLK
-                                                                &mkp LCLK
+&to 0   &kp F1    &kp F2      &kp F3     &kp F4         &kp F5      &mmv MOVE_UP     &kp LC(Y)      &kp LC(C)  &kp UP     &kp LC(V)  &kp LC(Z)  &kp LG(LS(D))
+&trans  &kp LGUI  &kp LALT    &kp LCTRL  &kp LSHFT      &mkp MB4    &mmv MOVE_DOWN   &kp C_AL_CALC  &kp LEFT   &kp DOWN   &kp RIGHT  &kp LC(X)  &kp F12
+&trans  &trans    &trans      &kp LC(A)  &kp LG(LS(D))  &mkp MB5    &mmv MOVE_LEFT   &kp INSERT     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp PAUSE_BREAK
+                  &kp C_MUTE  &trans     &trans         &trans      &mmv MOVE_RIGHT  &mkp LCLK      &mkp RCLK  &mkp MCLK
+                                                                    &mkp LCLK
             >;
 
             label = "NAV";
@@ -206,9 +206,9 @@
             label = "FUN";
             display-name = "FUN";
             bindings = <
-&trans          &trans      &trans      &trans            &kp F11  &trans      &mmv MOVE_UP     &trans  &kp F12  &trans  &trans           &trans          &trans
+&trans          &trans      &trans      &trans            &kp F5   &trans      &mmv MOVE_UP     &trans  &kp F6   &trans  &trans           &trans          &trans
 &trans          &kp F1      &kp F2      &kp F3            &kp F4   &mkp MB4    &mmv MOVE_DOWN   &trans  &kp F7   &kp F8  &kp F9           &kp F10         &trans
-&kp C_PREVIOUS  &kp C_NEXT  &kp C_STOP  &kp C_PLAY_PAUSE  &kp F5   &mkp MB5    &mmv MOVE_LEFT   &trans  &kp F6   &trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK
+&kp C_PREVIOUS  &kp C_NEXT  &kp C_STOP  &kp C_PLAY_PAUSE  &kp F11  &mkp MB5    &mmv MOVE_LEFT   &trans  &kp F12  &trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK
                             &kp C_MUTE  &trans            &trans   &trans      &mmv MOVE_RIGHT  &trans  &trans   &trans
                                                                                &mkp LCLK
             >;
@@ -221,7 +221,7 @@
 &trans     &trans  &kp E   &kp W   &kp F      &kp N1       &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &kp L   &kp A   &kp S   &kp D      &kp N2       &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &kp LCTRL  &kp F1  &kp F2  &kp F3  &kp F4     &kp N3       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                   &to 0   &trans  &kp LSHFT  &kp SPACE    &trans  &mo 0   &trans  &trans
+                   &to 0   &trans  &kp LSHFT  &kp SPACE    &trans  &to 0   &trans  &trans
                                                            &trans
             >;
 
