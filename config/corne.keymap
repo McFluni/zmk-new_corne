@@ -121,10 +121,10 @@
             //                                                      enter
 
             bindings = <
-&kp ESC    &kp Q            &kp W            &kp F         &kp P              &kp B          &kp UP           &kp J            &kp L               &kp U         &kp Y             &kp SQT           &kp RIGHT_ALT
-&kp TAB    &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &kp G          &kp DOWN_ARROW   &kp M            &hml RIGHT_SHIFT N  &hml LCTRL E  &hml RIGHT_ALT I  &hml RIGHT_GUI O  &kp FSLH
-&kp LCTRL  &kp Z            &kp X            &kp C         &kp D              &kp V          &kp LEFT_ARROW   &kp K            &kp H               &kp COMMA     &kp DOT           &kp SEMI          &kp RET
-                            &kp LG(LA(K))    &td0          &lt 1 LG(SPACE)    &lt 3 SPACE    &kp RIGHT_ARROW  &lt 5 BACKSPACE  &mo 2               &lt 4 DELETE
+&kp ESC    &kp Q            &kp W            &kp F         &kp P              &kp B          &kp UP           &kp J            &kp L                 &kp U         &kp Y             &kp SQT           &kp RIGHT_ALT
+&kp TAB    &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &kp G          &kp DOWN_ARROW   &kp M            &hml RIGHT_SHIFT N    &hml LCTRL E  &hml RIGHT_ALT I  &hml RIGHT_GUI O  &kp FSLH
+&kp LCTRL  &kp Z            &kp X            &kp C         &kp D              &kp V          &kp LEFT_ARROW   &kp K            &kp H                 &kp COMMA     &kp DOT           &kp SEMI          &kp RET
+                            &kp LG(LA(K))    &td0          &lt 1 LG(SPACE)    &lt 3 SPACE    &kp RIGHT_ARROW  &lt 5 BACKSPACE  &sk_mo 2 RIGHT_SHIFT  &lt 4 DELETE
                                                                                              &kp ENTER
             >;
 
