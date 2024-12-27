@@ -1,8 +1,11 @@
 #include <behaviors/mouse_keys.dtsi>
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -107,6 +110,15 @@
         };
     };
 
+    macros {
+        middledot: middledot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_8 &kp KP_NUMBER_3>;
+            label = "MIDDLEDOT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -121,11 +133,11 @@
             //                                                      enter
 
             bindings = <
-&kp ESC    &kp Q            &kp W            &kp F         &kp P              &kp B          &kp UP           &kp J            &kp L                 &kp U         &kp Y             &kp SQT           &kp GRAVE
-&kp TAB    &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &kp G          &kp DOWN_ARROW   &kp M            &hml RIGHT_SHIFT N    &hml LCTRL E  &hml RIGHT_ALT I  &hml RIGHT_GUI O  &kp FSLH
-&kp LCTRL  &kp Z            &kp X            &kp C         &kp D              &kp V          &kp LEFT_ARROW   &kp K            &kp H                 &kp COMMA     &kp DOT           &kp SEMI          &kp RET
-                            &kp LG(LA(K))    &td0          &lt 1 LG(SPACE)    &lt 3 SPACE    &kp RIGHT_ARROW  &lt 5 BACKSPACE  &sk_mo 2 RIGHT_SHIFT  &lt 4 DELETE
-                                                                                             &kp ENTER
+&lt 6 ESCAPE  &kp Q            &kp W            &kp F         &kp P              &kp B          &kp UP           &kp J            &kp L                 &kp U         &kp Y             &kp SQT           &kp GRAVE
+&kp TAB       &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &kp G          &kp DOWN_ARROW   &kp M            &hml RIGHT_SHIFT N    &hml LCTRL E  &hml RIGHT_ALT I  &hml RIGHT_GUI O  &kp FSLH
+&kp LCTRL     &kp Z            &kp X            &kp C         &kp D              &kp V          &kp LEFT_ARROW   &kp K            &kp H                 &kp COMMA     &kp DOT           &kp SEMI          &kp RET
+                               &kp LG(LA(K))    &td0          &lt 1 LG(SPACE)    &lt 3 SPACE    &kp RIGHT_ARROW  &lt 5 BACKSPACE  &sk_mo 2 RIGHT_SHIFT  &lt 4 DELETE
+                                                                                                &kp ENTER
             >;
 
             label = "COLEDH";
@@ -218,11 +230,11 @@
 
         layer_6 {
             bindings = <
-&trans     &trans  &kp E   &kp W   &kp F      &kp N1       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &kp L   &kp A   &kp S   &kp D      &kp N2       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL  &kp F1  &kp F2  &kp F3  &kp F4     &kp N3       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                   &to 0   &trans  &kp LSHFT  &kp SPACE    &trans  &to 0   &trans  &trans
-                                                           &trans
+&trans     &trans  &kp E   &kp W   &kp F      &kp NUMBER_1    &trans  &kp KP_NUMLOCK   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans      &trans
+&trans     &kp L   &kp A   &kp S   &kp D      &kp N2          &trans  &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &middledot  &trans
+&kp LCTRL  &kp F1  &kp F2  &kp F3  &kp F4     &kp N3          &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT  &trans
+                   &to 0   &trans  &kp LSHFT  &kp SPACE       &trans  &to 0            &trans           &trans
+                                                              &trans
             >;
 
             label = "MINECR";
