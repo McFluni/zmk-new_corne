@@ -40,9 +40,9 @@ layers:
   - {t: ., s: '>'}
   - {t: ;, s: ':'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - Gui+Alt+ K
+  - Gui+Alt+K
   - '&td0'
-  - {t: 'Gui+ $$mdi:keyboard-space$$', h: NUMBER}
+  - {t: 'Gui+$$mdi:keyboard-space$$', h: NUMBER}
   - {t: '$$mdi:keyboard-space$$', h: NAV}
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:backspace$$', h: FUN}
@@ -62,7 +62,7 @@ layers:
   - +
   - {t: '-', s: _}
   - ':'
-  - Gui+Sft+ D
+  - Gui+Sft+D
   - AL CALC
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -89,7 +89,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - RGUI
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+ 0
+  - Ctl+0
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - $$mdi:keyboard-space$$
@@ -155,12 +155,12 @@ layers:
   - F4
   - F5
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - Ctl+ Y
-  - Ctl+ C
+  - Ctl+Y
+  - Ctl+C
   - $$mdi:arrow-up-bold$$
-  - Ctl+ V
-  - Ctl+ Z
-  - Gui+Sft+ D
+  - Ctl+V
+  - Ctl+Z
+  - Gui+Sft+D
   - {t: '$$mdi:transfer$$', type: trans}
   - LGUI
   - $$mdi:apple-keyboard-option$$
@@ -172,13 +172,13 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - Ctl+ X
+  - Ctl+X
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+ A
-  - Gui+Sft+ D
+  - Ctl+A
+  - Gui+Sft+D
   - '&mkp MB5'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - Ins
