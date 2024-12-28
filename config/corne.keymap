@@ -3,6 +3,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -20,26 +23,27 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT>, <&kp CAPS>;
         };
-            td1: td_A_Umlaut {
-                compatible = "zmk,behavior-tap-dance";
-                #binding-cells = <0>;
-                tapping-term-ms = <167>;
-                bindings = <&kp A>, <&kp DE_A_UMLAUT>;
-            };
 
-            td2: td_U_Umlaut {
-                compatible = "zmk,behavior-tap-dance";
-                #binding-cells = <0>;
-                tapping-term-ms = <160>;
-                bindings = <&kp U>, <&kp DE_U_UMLAUT>;
-            };
+        td1: td_A_Umlaut {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <167>;
+            bindings = <&kp A>, <&kp DE_A_UMLAUT>;
+        };
 
-            td3: td_ESC_Caret {
-                compatible = "zmk,behavior-tap-dance";
-                #binding-cells = <0>;
-                tapping-term-ms = <180>;
-                bindings = <&kp ESC>, <&kp DE_CARET>;
-            };
+        td2: td_U_Umlaut {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <160>;
+            bindings = <&kp U>, <&kp DE_U_UMLAUT>;
+        };
+
+        td3: td_ESC_Caret {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <180>;
+            bindings = <&kp ESC>, <&kp DE_CARET>;
+        };
 
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
@@ -157,11 +161,11 @@
             //                                                      enter
 
             bindings = <
-&lt 6 ESCAPE  &kp Q            &kp W            &kp F         &kp P              &kp B          &kp UP           &kp J            &kp L                 &kp U         &kp Y             &kp SQT           &kp GRAVE
-&kp TAB       &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &kp G          &kp DOWN_ARROW   &kp M            &hml RIGHT_SHIFT N    &hml LCTRL E  &hml RIGHT_ALT I  &hml RIGHT_GUI O  &kp FSLH
-&kp LCTRL     &kp Z            &kp X            &kp C         &kp D              &kp V          &kp LEFT_ARROW   &kp K            &kp H                 &kp COMMA     &kp DOT           &kp SEMI          &kp RET
-                               &kp LG(LA(K))    &td0          &lt 1 LG(SPACE)    &lt 3 SPACE    &kp RIGHT_ARROW  &lt 5 BACKSPACE  &sk_mo 2 RIGHT_SHIFT  &lt 4 DELETE
-                                                                                                &kp ENTER
+&lt 6 ESCAPE  &kp Q  &kp W          &kp E  &kp R          &kp T      &kp UP           &kp J            &kp L               &td2          &kp Y             &kp SQT           &kp GRAVE
+&kp TAB       &td1   &kp S          &kp D  &kp F          &kp G      &kp DOWN_ARROW   &kp M            &hml RIGHT_SHIFT N  &hml LCTRL E  &hml RIGHT_ALT I  &hml RIGHT_GUI O  &kp FSLH
+&kp LCTRL     &kp Z  &kp X          &kp C  &kp V          &kp B      &kp LEFT_ARROW   &kp K            &kp H               &kp COMMA     &kp DOT           &kp SEMI          &kp RET
+                     &kp LG(LA(K))  &mo 1  &kp BACKSPACE  &kp DEL    &kp RIGHT_ARROW  &lt 5 BACKSPACE  &mo 2               &lt 4 DELETE
+                                                                     &kp ENTER
             >;
 
             label = "COLEDH";
