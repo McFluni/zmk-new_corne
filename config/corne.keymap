@@ -20,6 +20,26 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT>, <&kp CAPS>;
         };
+            td1: td_A_Umlaut {
+                compatible = "zmk,behavior-tap-dance";
+                #binding-cells = <0>;
+                tapping-term-ms = <167>;
+                bindings = <&kp A>, <&kp DE_A_UMLAUT>;
+            };
+
+            td2: td_U_Umlaut {
+                compatible = "zmk,behavior-tap-dance";
+                #binding-cells = <0>;
+                tapping-term-ms = <160>;
+                bindings = <&kp U>, <&kp DE_U_UMLAUT>;
+            };
+
+            td3: td_ESC_Caret {
+                compatible = "zmk,behavior-tap-dance";
+                #binding-cells = <0>;
+                tapping-term-ms = <180>;
+                bindings = <&kp ESC>, <&kp DE_CARET>;
+            };
 
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
