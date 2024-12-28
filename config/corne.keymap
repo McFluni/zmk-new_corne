@@ -162,10 +162,10 @@
             //                                                      enter
 
             bindings = <
-&lt 6 ESCAPE    &kp Q  &kp W              &kp E  &kp R          &kp T      &kp UP           &kp DE_Z         &td2          &kp DE_I      &kp DE_O         &kp DE_P         &kp GRAVE
-&kp LEFT_SHIFT  &td1   &kp S              &kp D  &kp F          &kp G      &kp DOWN_ARROW   &kp DE_J         &kp DE_K      &kp DE_L      &kp DE_O_UMLAUT  &kp RIGHT_SHIFT  &kp FSLH
-&kp LCTRL       &kp Z  &kp X              &kp C  &kp V          &kp B      &kp LEFT_ARROW   &kp DE_N         &kp DE_M      &kp DE_COMMA  &kp DE_PERIOD    &kp DE_MINUS     &kp RIGHT_SHIFT
-                       &kp LG(LA(ENTER))  &mo 1  &kp BACKSPACE  &kp DEL    &kp RIGHT_ARROW  &lt 5 BACKSPACE  &kp DE_SPACE  &tog 2
+&lt 6 ESCAPE    &kp Q  &kp W              &kp E  &kp R          &kp T      &kp UP           &kp DE_Z   &td2          &kp DE_I      &kp DE_O         &kp DE_P         &kp GRAVE
+&kp LEFT_SHIFT  &td1   &kp S              &kp D  &kp F          &kp G      &kp DOWN_ARROW   &kp DE_J   &kp DE_K      &kp DE_L      &kp DE_O_UMLAUT  &kp RIGHT_SHIFT  &kp FSLH
+&kp LCTRL       &kp Z  &kp X              &kp C  &kp V          &kp B      &kp LEFT_ARROW   &kp DE_N   &kp DE_M      &kp DE_COMMA  &kp DE_PERIOD    &kp DE_MINUS     &kp RIGHT_SHIFT
+                       &kp LG(LA(ENTER))  &mo 1  &kp BACKSPACE  &kp DEL    &kp RIGHT_ARROW  &kp ENTER  &kp DE_SPACE  &tog 2
                                                                            &kp ENTER
             >;
 
