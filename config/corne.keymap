@@ -164,11 +164,11 @@
             //                                                      enter
 
             bindings = <
-&lt 6 ESCAPE    &kp Q  &kp W              &kp E  &kp R          &kp T      &kp UP           &kp DE_Z   &td2          &kp DE_I      &kp DE_O       &kp DE_P         &kp DE_SZ
-&kp LEFT_SHIFT  &td1   &kp S              &kp D  &kp F          &kp G      &msc SCRL_DOWN   &kp DE_H   &kp DE_J      &kp DE_K      &kp DE_L       &kp DE_O_UMLAUT  &kp RIGHT_SHIFT
-&kp LCTRL       &kp Z  &kp X              &kp C  &kp V          &kp B      &kp LEFT_ARROW   &kp DE_N   &kp DE_M      &kp DE_COMMA  &kp DE_PERIOD  &kp DE_MINUS     &kp RIGHT_CONTROL
-                       &kp LG(LA(ENTER))  &mo 1  &kp BACKSPACE  &kp DEL    &kp RIGHT_ARROW  &kp ENTER  &kp DE_SPACE  &mo 2
-                                                                           &kp ENTER
+&td3            &kp Q  &kp W       &kp E  &kp R          &kp T      &msc SCRL_UP     &kp DE_Z   &td2          &kp DE_I      &kp DE_O       &kp DE_P         &kp DE_SZ
+&kp LEFT_SHIFT  &td1   &kp S       &kp D  &kp F          &kp G      &msc SCRL_DOWN   &kp DE_H   &kp DE_J      &kp DE_K      &kp DE_L       &kp DE_O_UMLAUT  &kp RIGHT_SHIFT
+&kp LCTRL       &kp Z  &kp X       &kp C  &kp V          &kp B      &msc SCRL_LEFT   &kp DE_N   &kp DE_M      &kp DE_COMMA  &kp DE_PERIOD  &kp DE_MINUS     &kp RIGHT_CONTROL
+                       &kp K_MUTE  &mo 1  &kp BACKSPACE  &kp DEL    &msc SCRL_RIGHT  &kp ENTER  &kp DE_SPACE  &mo 2
+                                                                    &mkp LCLK
             >;
 
             label = "COLEDH";
