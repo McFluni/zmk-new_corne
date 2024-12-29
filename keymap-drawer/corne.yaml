@@ -1,13 +1,13 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
   COLEDH:
-  - {t: '$$mdi:keyboard-esc$$', h: MINECR}
+  - '&td3'
   - Q
   - W
   - E
   - R
   - T
-  - $$mdi:arrow-up-bold$$
+  - $$mdi:pan-up$$
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Y))
   - '&td2'
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD I))
@@ -33,22 +33,22 @@ layers:
   - C
   - V
   - B
-  - $$mdi:arrow-left-bold$$
+  - $$mdi:pan-left$$
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD N))
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD M))
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN))
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN))
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SLASH AND QUESTION MARK))
   - $$mdi:apple-keyboard-control$$
-  - {t: 'Gui+Alt+$$mdi:keyboard-return$$', type: enter}
+  - MUTE
   - NUMBER
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
-  - $$mdi:arrow-right-bold$$
+  - $$mdi:pan-right$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SPACEBAR))
   - SYMBOL
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:mouse-left-click-outline$$
   NUMBER:
   - {t: COLEDH, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -295,7 +295,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   MINECR:
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - E
   - W
