@@ -40,7 +40,7 @@ layers:
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN))
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SLASH AND QUESTION MARK))
   - $$mdi:apple-keyboard-control$$
-  - MUTE
+  - $$mdi:volume-off$$
   - NUMBER
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
@@ -63,7 +63,7 @@ layers:
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 9 AND LEFT PARENTHESIS))
   - ':'
   - Gui+Sft+D
-  - AL CALC
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
