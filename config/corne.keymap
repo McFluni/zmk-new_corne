@@ -38,11 +38,11 @@
             bindings = <&kp U>, <&kp DE_U_UMLAUT>;
         };
 
-        td3: td_ESC_Caret {
+        td3: td_ESC_TAB {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <180>;
-            bindings = <&kp ESC>, <&kp DE_CARET>;
+            bindings = <&kp ESC>, <&kp TAB>;
         };
 
         hml: hml {
