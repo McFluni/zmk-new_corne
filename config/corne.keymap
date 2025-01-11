@@ -36,7 +36,6 @@
             #binding-cells = <0>;
             tapping-term-ms = <160>;
             bindings = <&kp U>, <&kp DE_U_UMLAUT>;
-            ignore-modifiers = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         td3: td_ESC_TAB {
